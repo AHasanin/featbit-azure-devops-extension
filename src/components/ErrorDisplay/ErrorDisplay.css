@@ -1,0 +1,117 @@
+.error-display {
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 6px;
+  padding: 16px;
+  margin: 12px 0;
+}
+
+.error-display__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.error-display__header {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.error-display__icon {
+  font-size: 16px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.error-display__title {
+  color: #dc2626;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.error-display__dismiss {
+  background: none;
+  border: none;
+  color: #9ca3af;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.error-display__dismiss:hover {
+  color: #6b7280;
+}
+
+.error-display__message {
+  color: #7f1d1d;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+  margin-left: 24px;
+}
+
+.error-display__actionable {
+  color: #7f1d1d;
+  font-size: 13px;
+  line-height: 1.4;
+  margin: 0;
+  margin-left: 24px;
+  font-style: italic;
+}
+
+.error-display__actions {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 24px;
+  margin-top: 4px;
+}
+
+.error-display__retry-button {
+  background-color: #dc2626;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.error-display__retry-button:hover {
+  background-color: #b91c1c;
+}
+
+.error-display__retry-button:focus {
+  outline: 2px solid #dc2626;
+  outline-offset: 2px;
+}
+
+/* Compact variant for inline errors */
+.error-display--compact {
+  padding: 8px 12px;
+  margin: 4px 0;
+}
+
+.error-display--compact .error-display__title {
+  font-size: 14px;
+}
+
+.error-display--compact .error-display__message {
+  font-size: 13px;
+  margin-left: 20px;
+}
+
+.error-display--compact .error-display__actionable {
+  font-size: 12px;
+  margin-left: 20px;
+}

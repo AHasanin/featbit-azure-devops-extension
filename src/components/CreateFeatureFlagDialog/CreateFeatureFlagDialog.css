@@ -1,0 +1,27 @@
+/* 
+ * Custom styles for CreateFeatureFlagDialog using Azure DevOps UI Components
+ * Most styling is now handled by azure-devops-ui components
+ */
+
+/* TextField width overrides */
+.fabric-TextField {
+  width: 100% !important;
+}
+
+.fabric-TextField .ms-TextField-fieldGroup {
+  width: 100% !important;
+}
+
+/* Custom overrides if needed */
+.create-flag-dialog .azure-devops-ui-dialog-content {
+  /* Any specific dialog content overrides */
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
