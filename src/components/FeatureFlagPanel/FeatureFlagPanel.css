@@ -1,0 +1,20 @@
+/* Feature Flag Panel - Azure DevOps UI Overrides */
+
+/* Custom styles for feature flag cards */
+.feature-flag-item {
+  /* Ensure proper card styling integration */
+  transition: box-shadow 0.2s ease;
+}
+
+.feature-flag-item:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Ensure text truncation works properly */
+.feature-flag-item h4 {
+  word-break: break-word;
+}
+
+.feature-flag-item p {
+  word-break: break-word;
+}
